@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: gainsboro;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form h1{
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.text{
+    display: flex;
+    width: 100%;
+    color: white;
+    background: gray;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    font-family: "calibri";
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form{
+    width: 300px;
+    background: gray;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-family: "Calibri";
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.button{
+    margin: 25%;
+    background: gray;
+    color: white;
+    width: 40%;
+    line-height: 30px;
+    margin-bottom: 40px ;
+    font-size: 20px;
+    
+}
+.button:hover{    
+    background: gainsboro;
+    cursor: pointer;
+}
+.number{
+    line-height: 20px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="universo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">Sistema Solar</a>
+        </div>
+    <nav>
+        
+        <ul>
+            <li><a href="#">Sol</a></li>
+            <li><a href="#">Mercurio</a></li>
+            <li><a href="#">Venus</a></li>
+            <li><a href="#">Tierra</a></li>
+            <li><a href="#">Marte</a></li>
+            <li><a href="#">Jupiter</a></li>
+            <li><a href="#">Saturno</a></li>
+            <li><a href="#">Urano</a></li>
+            <li><a href="#">Neptuno</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="contenedor">
+    <div class="contenedor1"> <h1>Bienvenido al sistema solar</h1>
+        <p>En esta pagina vas a calcular tu peso 
+            teniendo en cuenta la gravedad del planeta tierra
+            y la de los distintos planetas que podemos encontrar en nuestro sistema solar 
+        </p>
+    </div>
+        <div class="image"><img src="sol.webp" alt=""> </div>
+</div>
+
+    <div class="universo">
+        <h1>Elige un Planeta</h1>
+    
+        <div class="sistema">
+    
+            <div class="image">
+                <img src="sistema-solar.avif" >
+            </div>
+    
+            <form action="universo.php" method="post">
+                <div class="input">
+                    <p>Peso en kg</p>
+                    <input name="peso" type="number" placeholder="peso">
+                </div>
+                <div class="input">
+                    <p>Planeta</p>
+                    <input name="planeta" list="planetas" placeholder="planeta">
+                    <datalist id="planetas">
+                        <option value="mercurio"></option>
+                        <option value="venus"></option>
+                        <option value="tierra"></option>
+                        <option value="marte"></option>
+                        <option value="jupiter"></option>
+                        <option value="saturno"></option>
+                        <option value="urano"></option>
+                        <option value="neptuno"></option>
+
+                    </datalist>
+                </div>
+                <div class="button">
+                    <input type="submit"  name="enviar" value="Calcular" >
+                </div>
+                
+            </form>
+        </div>
+    
+    
+    </div>
+
+
+</body>
+</html>

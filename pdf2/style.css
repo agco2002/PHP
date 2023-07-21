@@ -1,0 +1,55 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+  background-image: url(technology.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.form{
+  width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;/*margin auto nos permite centrar el formulario*/
+    margin-top: 180px;/*Ayuda centrar el formulario*/
+    border-radius: 10px;
+    font-family: "Calibri";
+    color: white;
+    box-shadow: 7px 13px 37px #000;/*Le da sombra al formulario*/
+}
+.form h1{
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.button{
+  margin: 0%;
+  background: #1f53c5;
+  color: white;
+  width: 100%;
+  line-height: 40px;
+  margin-bottom: 20px;
+  border: #1f53c5;
+  font-size: 18px;
+}
+.button:hover{    
+  background: grey;
+  cursor: pointer;
+}
+input{
+  width: 100%;
+    color: white;
+    background: #24303c;
+    border:2px solid #1f53c5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    font-family: "calibri";
+    font-size: 18px;
+    cursor: pointer;
+}
