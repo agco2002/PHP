@@ -1,0 +1,72 @@
+*{
+    color: #fff;
+}
+.cabecera{
+    background-color: #b80f22;
+    text-shadow: 1px 1px 1px rgb(186, 150, 168);
+    
+}
+h1{
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(
+    to bottom,
+    rgba(247, 243, 243, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
+  border: 3px solid  #b80f22;
+}
+
+.crear{
+
+    background: linear-gradient(
+    to bottom,
+    rgba(247, 243, 243, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
+  border: 3px solid  #b80f22;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(186, 150, 168);
+}
+
+thead,
+tfoot {
+  background: #b80f22;
+  color: white;
+  text-shadow: 1px 1px 1px rgb(186, 150, 168);
+}
+
+thead th,
+tfoot th,
+tfoot td {
+  background: linear-gradient(
+    to bottom,
+    rgba(247, 243, 243, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
+  border: 3px solid  #b80f22;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #b80f22;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #9d969a;
+  }
+  
+ 
+  
+  table {
+    background-color: #b80f22;
+  }
+  .Actualizar{
+    background: #b80f22;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(186, 150, 168);
+  }
+  .eliminar{
+     background: #b80f22;
+  color: white;
+  text-shadow: 1px 1px 1px rgb(186, 150, 168);
+  }
