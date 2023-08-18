@@ -21,8 +21,11 @@
                 <tr>
                    
                     <th scope="col">nombre</th>
-                   <th scope="col">nombre_carrera</th>
+                    <th scope="col">nombre_carrera</th>
                     <th scope="col">fecha</th>
+                    <th scope="col">apellido</th>
+                  
+                    
                    
             </thead>
             <tbody>
@@ -31,7 +34,7 @@
 
     require 'conexion.php';
 
-    $sql= ("SELECT alumno, nombre_carrera, fecha
+    $sql= ("SELECT alumno, apellido, nombre_carrera, fecha
     from alumno, carrera, inscripcion;");
     $resultado= $conn->query($sql);
     ?>
@@ -47,6 +50,9 @@
                     <td scope="row"><?php  echo $fila['nombre_carrera']?></td>
 
                     <td scope="row"><?php  echo $fila['fecha']?></td>
+
+                    <td scope="row"><?php  echo $fila['apellido']?></td>
+                    
                     
                     <th>
       <a href=""class="btn btn-warning">editar </a>
