@@ -3,7 +3,7 @@
 $servername = "127.0.0.1:3308";
 $username = "root";
 $password = "";
-$dbname = "ejercicio2";
+$dbname = "crud3";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {

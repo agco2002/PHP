@@ -15,16 +15,21 @@
     <div class="container">
     <table class="table">
     <div class="container">
-<a href="" class="btn btn-success">agregar</a>
+<a href="crear.php" class="btn btn-success">agregar</a>
 </div>
   <thead>
                 <tr>
                    
-                    <th scope="col">nombre</th>
-                    <th scope="col">nombre_carrera</th>
-                    <th scope="col">fecha</th>
-                    <th scope="col">apellido</th>
-                  
+                    <th scope="col">idproducto</th>
+                    <th scope="col">idcategorias</th>
+                    <th scope="col">idmarcas</th>
+                    <th scope="col">precio</th>
+                    <th scope="col">descripcion</th>
+                    <th scope="col">nombremarca</th>
+                    <th scope="col">nombrecategoria</th>
+                    
+            
+                    
                     
                    
             </thead>
@@ -34,8 +39,8 @@
 
     require 'conexion.php';
 
-    $sql= ("SELECT alumno, apellido, nombre_carrera, fecha
-    from alumno, carrera, inscripcion;");
+    $sql= ("SELECT *FROM productos INNER JOIN categorias on productos.idcategorias=categorias.idcategorias 
+    INNER JOIN marcas on productos.idmarcas=marcas.idmarcas;");
     $resultado= $conn->query($sql);
     ?>
 
@@ -45,13 +50,17 @@
         ?>
                 <tr>
                    
-                    <td scope="row"><?php  echo $fila['alumno']?></td>
+                    <td scope="row"><?php  echo $fila['idproducto']?></td>
+                    <td scope="row"><?php  echo $fila['idcategorias']?></td>
+                    <td scope="row"><?php  echo $fila['idmarcas']?></td>
+                    <td scope="row"><?php  echo $fila['precio']?></td>
+                    <td scope="row"><?php  echo $fila['descripcion']?></td>
+                    <td scope="row"><?php  echo $fila['nombremarca']?></td>
+                    <td scope="row"><?php  echo $fila['nombrecategoria']?></td>
+            
+                   
                     
-                    <td scope="row"><?php  echo $fila['nombre_carrera']?></td>
-
-                    <td scope="row"><?php  echo $fila['fecha']?></td>
-
-                    <td scope="row"><?php  echo $fila['apellido']?></td>
+                    
                     
                     
                     <th>
